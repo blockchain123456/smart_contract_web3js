@@ -103,8 +103,8 @@ abi =[
 ]
 VotingContract = web3.eth.contract(abi);
 // In your nodejs console, execute contractInstance.address to get the address at which the contract is deployed and change the line below to use your deployed address
-contractInstance = VotingContract.at('0x0382F9Bc0D2fecA5C95669203bdd09dF5481d397');
-candidates = {'黑咖啡': 'candidate-1', '拿鐵咖啡': 'candidate-2', '卡布奇諾': 'candidate-3'}
+contractInstance = VotingContract.at('0xf2f27bbEb39C115b87Be3a181c41AD552b081622');
+candidates = {'youtube': 'candidate-1', 'instagram': 'candidate-2', 'facebook': 'candidate-3'}
 
 function voteForCandidate() {
   candidateName = $('#candidate').val();
